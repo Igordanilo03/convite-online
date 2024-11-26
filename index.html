@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convite para Sair</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+</head>
+<body>
+    <div id="initialPage">
+        <h1>Aceita sair comigo?</h1>
+        <p>Olá, Amanda! Tudo bem?<br>
+        Você deve estar achando isso um pouco estranho, mas eu queria te convidar para fazer algo juntos. Acho que sou meio tímido para fazer isso pessoalmente, pelo menos por enquanto. Talvez você esteja se perguntando por que eu não mandei uma mensagem como uma pessoa normal, né? A resposta é que nós não somos exatamente "normais", rs. Então, por que fazer isso de um jeito normal?<br>
+        É só um convite de amizade mesmo, acho que esta bem corrido, e talvez fosse uma boa idéia a gente se divertir sair um pouco da rotina seria bom. Independente da sua resposta, ainda podemos conversar numa boa. Além do mais, pra quem eu vou indicar animes, e falar sobre eles, e quem melhor para mi endicar que uma expecialista né ksk, e também temos que descobrir que o mais desastrado entre nós né kkkk</p>
+        <button id="yesButton">Sim</button>
+        <button id="noButton">Não</button>
+    </div>
+    <div id="optionsPage" style="display:none;">
+        <h2>Algumas opções do que podemos fazer:</h2>
+        <div class="activity-card" data-activity="cinema">
+            <img src="images/cinema.jpeg" alt="Cinema">
+            <h3>Cinema</h3>
+            <p>Assistir a algum filme interessante!</p>
+        </div>
+        <div class="activity-card" data-activity="shopping">
+            <img src="images/shopping.jpeg" alt="Shopping">
+            <h3>Shopping</h3>
+            <p>Aquele passeio no shopping.</p>
+        </div>
+        <div class="activity-card" data-activity="restaurant">
+            <img src="images/transferir.jpeg" alt="Comida Japonesa">
+            <h3>Comida Japonesa</h3>
+            <p>Experimentar delícias do Japão num restaurante, menos aquele que vacilou com voçê.</p>
+        </div>
+        <div class="activity-card" data-activity="home">
+            <img src="images/home.jpg" alt="Ficar em Casa">
+            <h3>Ficar em Casa</h3>
+            <p>Maratona aque anime, quantos eps a gente consegue assistir no dia será?</p>
+        </div>
+        <div id="calendar" style="display:none;">
+            <input type="text" id="flatpickr" placeholder="Escolha a data e hora...">
+        </div>
+        <button id="confirmDate" style="display:none;">Confirmar</button>
+    </div>
+    <div id="convincePage" style="display:none;">
+        <h2>Posso tentar te convencer?</h2>
+        <button id="convinceYes">Sim</button>
+        <button id="convinceNo">Não</button>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="script.js"></script>
+</body>
+</html>
